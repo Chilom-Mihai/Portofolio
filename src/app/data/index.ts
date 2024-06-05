@@ -101,7 +101,7 @@ export const projects = [
       "/blazor.png",
       "/sqlServer.png",
     ],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://github.com/Chilom-Mihai/IMS",
   },
   {
     id: 3,
