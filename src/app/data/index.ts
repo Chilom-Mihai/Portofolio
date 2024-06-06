@@ -80,7 +80,6 @@ export const projects = [
       "/angular.png",
       "/nestjs.png",
       "/nx.png",
-      "/stripe.png",
       "/auth0.png",
       "/tailwind.png",
       "/cypress.png",
