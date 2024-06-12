@@ -1,38 +1,36 @@
-import React from "react";
-import { workExperience } from "../data";
-import { Button, MovingBorder } from "./ui/moving-border";
+import { education } from "../data";
+import { Button } from "./ui/moving-border";
 
-const Experience = () => {
+const Education = () => {
   return (
-    <div className="pb-20" id="projects">
-      <h1 className="heading">
-        My
-        <span className="text-purple"> work experience</span>
-      </h1>
+    <div className="py-20" id="education">
+      <h1 className="heading text-purple">Education</h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
+        {education.map((ed) => (
           <Button
-            key={card.id}
+            key={ed.id}
             borderRadius="1.75rem"
             className="flex-1 text-white border-neutral-200 dark:border-slate-800 cursor-text"
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:-w-32 md:w-20 w-16"
-              />
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
+                  {ed.university}
                 </h1>
+                <h6 className="text-start text-gray mt-3 font-bold">
+                  {ed.city}
+                </h6>
                 <h2 className="text-start text-gray mt-3 font-bold">
-                  {card.company}
+                  {ed.profile}
                 </h2>
+                <h5 className="text-start text-gray mt-3 font-bold">
+                  {ed.master && "Master"}
+                </h5>
                 <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
+                  {ed.desc}
                 </p>
+                <h6 className="flex items-start mt-7">{ed.period}</h6>
               </div>
             </div>
           </Button>
@@ -42,4 +40,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

@@ -1,4 +1,5 @@
 import Approach from "./components/approach";
+import Education from "./components/education";
 import Experience from "./components/experience";
 import Footer from "./components/footer";
 import Grid from "./components/grid";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <Projects />
+        <Education />
         <Hobbies />
         <Experience />
         <Approach />

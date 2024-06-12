@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Education", link: "#education" },
   { name: "Hobbies", link: "#hobbies" },
   { name: "Contact", link: "#contact" },
 ];
@@ -198,6 +199,13 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
+  {
+    id: 3,
+    title: "Freelencer",
+    desc: "As a freelance developer, I create dynamic and responsive web applications. Specializing in frontend development, I focus on implementing custom functionalities, optimizing performance, and ensuring a seamless user experience. My role involves collaborating with clients to meet their project goals and exceed expectations.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 ];
 
 export const socialMedia = [
@@ -215,5 +223,36 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/mihai-chilom-3a6072228/",
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    university: "University of automation, computer and Electronics",
+    city: "Craiova",
+    profile: "Bachelors of Computer science, Computers in English",
+    period: "2019-2023",
+  },
+  {
+    id: 2,
+    university: "University of automation, computer and Electronics",
+    city: "Craiova",
+    profile: "Information Systems for e-Business",
+    master: true,
+    period: "2023-Present",
+  },
+  {
+    id: 3,
+    university: "SKILLBRAIN Academy",
+    desc: "At SKILLBRAIN Academy, I will learn to create websites using React, starting with HTML, CSS, and JavaScript. I will progress to building dynamic user interfaces with reusable components and smooth interactions. The academy offers practical projects and an internship for hands-on experience in frontend development.",
+    period: "2024-Present",
+  },
+  {
+    id: 4,
+    university: "Nagarro",
+    city: "Craiova",
+    desc: "At Nagarro Academy, I gained expertise in HTML, CSS, and JavaScript through interactive sessions and comprehensive homework assignments. This experience helped me develop captivating, user-friendly web interfaces and laid a strong foundation for my journey as a frontend developer.",
+    period: "2022-2023",
   },
 ];

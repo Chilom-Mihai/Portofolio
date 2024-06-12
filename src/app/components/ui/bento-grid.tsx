@@ -8,6 +8,8 @@ import { useState } from "react";
 import animationData from "@/app/data/confetti.json";
 import MagicButton from "../magicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { education } from "@/app/data";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -50,6 +52,11 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
+
+  const handleShowPhone = () => {
+    setShowPhone(true);
+  };
 
   const handleCopy = () => {
     navigator.clipboard.writeText("chilommihai2000@gmail.com");
@@ -81,23 +88,23 @@ export const BentoGridItem = ({
             ></img>
           )}
         </div>
-        <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
-          }`}
-        >
-          {spareImg && (
-            <img
-              src={spareImg}
-              alt={spareImg}
-              className={"object-cover, object-center w-full h-full"}
-            ></img>
-          )}
-        </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
             {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold "></div> */}
           </BackgroundGradientAnimation>
+        )}
+      </div>
+      <div
+        className={`absolute right-0 -bottom-5 ${
+          id === 5 && "w-full opacity-80"
+        }`}
+      >
+        {spareImg && (
+          <img
+            src={spareImg}
+            alt={spareImg}
+            className={"object-cover, object-center w-full h-full"}
+          ></img>
         )}
       </div>
 
@@ -155,13 +162,19 @@ export const BentoGridItem = ({
                 }}
               ></Lottie>
             </div>
-
             <MagicButton
               title={copied ? "Email copied" : "Copy my email"}
               position="left"
               icon={<IoCopyOutline />}
               otherClasses="!bg-[#161a31]"
               handleClick={handleCopy}
+            ></MagicButton>
+            <MagicButton
+              title={showPhone ? "+40735557656" : "Show phone number"}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+              icon={<FaPhoneAlt />}
+              handleClick={handleShowPhone}
             ></MagicButton>
           </div>
         )}
