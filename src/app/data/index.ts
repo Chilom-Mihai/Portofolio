@@ -245,7 +245,7 @@ export const education = [
   {
     id: 3,
     university: "SKILLBRAIN Academy",
-    desc: "At SKILLBRAIN Academy, I will learn to create websites using React, starting with HTML, CSS, and JavaScript. I will progress to building dynamic user interfaces with reusable components and smooth interactions. The academy offers practical projects and an internship for hands-on experience in frontend development.",
+    desc: "At SKILLBRAIN Academy, I learn to create websites using React, starting with HTML, CSS, and JavaScript. I progress to building dynamic user interfaces with reusable components and smooth interactions. The academy offers practical projects and an internship for hands-on experience in frontend development.",
     period: "2024-Present",
   },
   {
