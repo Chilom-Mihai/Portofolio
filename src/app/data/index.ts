@@ -12,10 +12,10 @@ export const gridItems = [
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
     className:
-      "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[45vh] mr-[15px] mb-[15px]",
+      "lg:col-span-3 md:col-span-6 md:row-span-4 min-h-[70vh] mr-[15px] mb-[15px]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/DSCF1333.jpg",
     spareImg: "",
   },
   {
